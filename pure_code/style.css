@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;600&display=swap');
 
 :root{
-    /* --yellow:#f9ca24; */
-    --yellow:#ffffff;
+    --yellow:#f9ca24;
+    /* --yellow:#ffffff; */
 }
 
 *{
@@ -11,7 +11,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -100,7 +100,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.7rem solid #ffffff;
 }
 
 header .user .name{
@@ -148,6 +148,10 @@ header .navbar ul li a:hover{
     z-index: 1000;
     display: none;
 }
+.portfolio-box{
+    font-size: 2rem;
+    color: white;
+}
 
 .home{
     display: flex;
@@ -176,31 +180,29 @@ header .navbar ul li a:hover{
     padding: 1rem 0;
 }
 
-.test{
+.skill .row .counter{
+    flex:1 1 48rem;
     display: flex;
     justify-content: center;
-    flex-flow: column;
-    padding:0 15rem;
+    flex-wrap: wrap;
 }
 
-.test h3{
-    font-size: 2.5rem;
-    color:#fff;
+.skill .row .counter .box{
+    width:20rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:1rem;
 }
 
-.test h1{
-    font-size:5rem;
-    color:#fff;
-}
-
-.test h1 span{
+.skill .row .counter .box span{
+    font-size: 4rem;
     color:var(--yellow);
 }
 
-.test p{
-    font-size:2rem;
-    color:#eee;
-    padding: 1rem 0;
+.skill .row .counter .box h3{
+    font-size: 2rem;
+    color:#fff;
 }
 
 .about .row{
@@ -216,6 +218,14 @@ header .navbar ul li a:hover{
     padding:2rem 1rem;
     padding-left: 6rem;
 }
+
+.about .row .info .resume-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
 
 .about .row .info h3{
     font-size: 2rem;
@@ -241,7 +251,7 @@ header .navbar ul li a:hover{
     background:#222;
     text-align: center;
     padding: 2rem;
-    margin:2rem;
+    margin:1rem;
 }
 
 .about .row .counter .box span{
@@ -252,6 +262,25 @@ header .navbar ul li a:hover{
 .about .row .counter .box h3{
     font-size: 2rem;
     color:#fff;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.resume .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+.resume .row span{
+    color: white;
+    font-size: 3rem;
 }
 
 .education .box-container{

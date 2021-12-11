@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
   $('#menu').click(function(){
@@ -38,3 +37,12 @@ $(document).ready(function(){
 
 });
 
+
+
+function toEng(){
+  window.location.href = "index-eng.html";
+  }
+
+  function toThai(){
+    window.location.href = "index.html";
+    }
